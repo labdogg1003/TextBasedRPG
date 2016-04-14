@@ -25,6 +25,7 @@
     <ClInclude Include="RPGFileIO.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Main.cpp" />
     <ClCompile Include="RPGFileIO.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
