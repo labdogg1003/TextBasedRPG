@@ -1,0 +1,46 @@
+1
+Castle
+You are at the begging of your quest. You have a log road ahead of you.  Go look in the chest. Good luck 
+1
+
+2
+Open Meadow
+You have chosen to go the the open medow. There is a rock, a log, and a hole you can look in. 
+2 3 4
+
+3
+You have come upon a troll bridge. There is a rock you can look under. 
+2
+
+4
+You are now on a barren road. You are very susceptible to looters. 
+
+5
+You have now come upon a troll village. You are in danger. There is a vase, a chest and a shed to look in. 
+5 1  6
+
+6
+Dark Forest 
+You have chosen the path less traveled. You are now in the dark forest. There is a fallen tree to look under. 
+3
+
+6.
+Oggar Cave
+You have stumbled upon an Oggar cave. There is an ogar chest and a rock you can look under
+7 2
+
+7
+Village
+You have now come to village, your last stop before you go to defeat the dragon. There is a blacksmith shop, a golden chest, and an enchanted vase. 
+8 9 10
+
+8
+Dead end
+You have reached a dead end. There is an enchanted chest you can look in. 
+11
+
+9
+Dragon Cave
+You have now reached the Dragon’s Cave. You have nothing to look in. Brace your self for the fight of your life. 
+
+
