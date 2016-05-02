@@ -1,25 +1,29 @@
+#pragma once
 #include <string>
 #include <vector>
 #include "Character.h"
+#include "Item.h"
 
-#ifndef Enemy_h
-#define Enemy_h{}
+#ifndef Player_h
+#define Player_h
 
-class Enemy : public Character
+using namespace std;
+
+class Player : public Character
 {
 private:
-	int attackDamage;
+	Item weapon;
 public:
-	void setAttackDamage(int damage)
+	void setWepon(Item weapon)
 	{
-		attackDamage = damage;
+		Item w;
+		w.getName;
+		weapon = w;
 	}
-	int getDamage()
+
+	Item getWeapon()
 	{
-		return attackDamage;
+		return weapon;
 	}
 };
-#endif // Enemy_h
-
-
-
+#endif //Player_h

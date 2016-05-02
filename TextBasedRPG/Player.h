@@ -1,3 +1,4 @@
+#pragma once
 #include <string>
 #include <vector>
 #include "Character.h"
@@ -8,14 +9,14 @@
 
 using namespace std;
 
-class Player: public Character
+class Player : public Character
 {
 private:
 	Item weapon;
 public:
 	void setWepon(Item weapon)
 	{
-		Item w; 
+		Item w;
 		w.getName;
 		weapon = w;
 	}
@@ -26,4 +27,3 @@ public:
 	}
 };
 #endif //Player_h
-

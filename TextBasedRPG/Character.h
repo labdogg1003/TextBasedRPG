@@ -1,3 +1,5 @@
+#pragma once
+
 #include <string>
 #include <vector>
 #include "Area.h"
@@ -10,7 +12,7 @@ using namespace std;
 class Character
 {
 private:
-	int Health; 
+	int Health;
 	Area area;
 	string Name;
 public:
@@ -42,7 +44,7 @@ public:
 	{
 		return Name;
 	}
-		
+
 };
 
 #endif //character_h
