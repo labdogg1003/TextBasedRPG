@@ -12,6 +12,7 @@ class Furniture
 private:
     int key;      // Key value for searching later
     string name;  // name of the furniture
+	string description; //the description of the furniture
     bool hasItem; // does the furniture contain an item?
 	int itemKey;    // the key to the item the furniture contains
 
@@ -49,12 +50,17 @@ public:
     
     void setName(string n)
         {name = n;}
+
+	void setDescription(string d)
+        {description = d;}
    
     void setHasItem(bool h)
         {hasItem = h;}
     
     void setItem(int i)
         {itemKey = i;}
+
+
     
     //Accessor Methods
     int getKey() const
@@ -62,6 +68,9 @@ public:
     
     string getName() const
         {return name;}
+
+	string getDescription() const
+		{return description;}
     
     bool getHasItem() const
         {return hasItem;}

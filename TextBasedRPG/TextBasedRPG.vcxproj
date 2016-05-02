@@ -20,16 +20,19 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Area.h" />
-    <ClInclude Include="Character.h" />
-    <ClInclude Include="Enemy.h" />
     <ClInclude Include="Furniture.h" />
     <ClInclude Include="Item.h" />
-    <ClInclude Include="Player.h" />
     <ClInclude Include="RPGFileIO.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="RPGFileIO.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Area.txt" />
+    <Text Include="Furniture.txt" />
+    <Text Include="items.txt" />
+    <Text Include="Item_new.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{E0D1806C-F029-415F-A994-CDE43EEDCF34}</ProjectGuid>

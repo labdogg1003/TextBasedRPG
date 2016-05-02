@@ -1,1 +1,71 @@
-1Basic Sword3true102Basic Sheild3false 1032 coins 0false 14Strong Sword5true 145Rusty Shield1false 164 coins 0 false 17Troll Sword3true108Oggar sword5true 159Obsidian Sword10true 2010Golden Sword 13true811Enchanted Shield 15false 2512Enchanted Sword30true100
+1
+Basic Sword
+3
+1
+10
+
+2
+Basic Sheild
+3
+0
+10
+
+3
+2 coins
+0
+0
+1
+
+4
+Strong Sword
+5
+1
+14
+
+5
+Rusty Shield
+1
+0
+1
+
+6
+4 coins 
+0
+0
+1
+
+7
+Troll Sword
+3
+1
+10
+
+8
+Ogre sword
+5
+1
+15
+
+9
+Obsidian Sword
+10
+1
+20
+
+10
+Golden Sword
+13
+1
+8
+
+11
+Enchanted Shield
+15
+0
+25
+
+12
+Enchanted Sword
+30
+1
+100

@@ -27,15 +27,6 @@
     <ClInclude Include="RPGFileIO.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Character.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Player.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Enemy.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="RPGFileIO.cpp">
@@ -44,5 +35,19 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Area.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="Furniture.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="items.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="Item_new.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

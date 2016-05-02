@@ -9,6 +9,7 @@ class Item
 private:
     int key;        //Key used for searching later
     string name;    //name of the item
+	string description; //description of the item
     int damage;     //damage the item does if used as a weapon
     bool isWeapon;  //if the item is a weapon
     int uses;       //how many uses the item has as a weapon
@@ -50,6 +51,9 @@ public:
     
     void setName(string n)
         {name = n;}
+
+	void setDescription(string d)
+		{description = d;}
     
     void setDamage(int d)
         {damage = d;}
@@ -66,6 +70,9 @@ public:
     
     string getName() const
         {return name;}
+
+	string getDescription() const
+		{return description;}
     
     int getDamage() const
         {return damage;}

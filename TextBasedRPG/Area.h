@@ -36,8 +36,8 @@ public:
     void setKey(int k)
         {key = k;}
     
-    void setName(string name)
-        { name = name; }
+    void setName(string n)
+        { name = n; }
     
     void setDescription(string des)
         { description = des;}
@@ -55,7 +55,7 @@ public:
     string getDescription() const
         {return description;}
 
-	vector<int> getFurniture()
+	vector<int> getFurniture() const
 	{return furnitureKeys;}
 };
 

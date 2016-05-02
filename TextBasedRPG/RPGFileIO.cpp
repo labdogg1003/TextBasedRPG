@@ -1,3 +1,4 @@
+#pragma once
 
 #include "RPGFileIO.h"
 #include "Area.h"
@@ -27,18 +28,20 @@
 		string key;
 		string description;
 		string furnitureKeys;
+		string dummyString;
 		int num;
 		vector<int> numbers;
 
 		//Get The information of the object from the file.
-		getline(file, name);
 		getline(file, key);
+		getline(file, name);
 		getline(file, description);	
 		getline(file, furnitureKeys);
+		getline(file, dummyString);
 
 		//start adding the information from the file to our object
 		temp.setName(name);
-		temp.setKey(std::stoi(key));
+		temp.setKey(std::atoi(key.c_str()));
 		temp.setDescription(description);
 
 		//convert string to vector<int>
@@ -77,6 +80,56 @@
  {
 	 vector<Furniture> furniture;
 
+	 ifstream file;
+	 file.open(fileName, ios::in);
+
+	 while (!file.eof())
+	 {
+		 //Local Variables
+		 Furniture temp;
+		 string name;
+		 string key;
+		 string description;
+		 string hasItem = "1";
+		 string itemKey;
+		 string dummyString;
+		 int num;
+
+		 //Get The information of the object from the file. read the next 5 lines in.
+		 getline(file, key);
+		 getline(file, name);
+		 getline(file, description);
+		 //getline(file, hasItem);
+		 getline(file, itemKey);
+		 getline(file, dummyString);
+
+		 cout << "name: " << name << endl;
+		 cout << key << endl;
+		 cout << description << endl;
+		 cout << itemKey << endl;
+
+		 //start adding the information from the file to our object
+		 temp.setName(name);
+		 temp.setDescription(description);
+		 temp.setKey(std::atoi(key.c_str()));
+		 temp.setHasItem(std::atoi(hasItem.c_str()));
+		 temp.setItem(std::atoi(itemKey.c_str()));
+			
+		 //push the temp area to areas
+		 furniture.push_back(temp);
+	 }
+
+	 //DEBUG code for seeing the file as it is parsed by this function
+	 for (Furniture &x : furniture)
+	 {
+		 cout << "key: " << x.getKey() << endl;
+		 cout << "Name: " << x.getName() << endl;
+		 cout << "Description: " << x.getDescription() << endl;
+		 cout << "has Item: " << x.getHasItem() << endl;
+		 cout << "Item Keys: " << x.getItem() << endl;
+		 cout << endl << endl;
+	 }
+
 	 return furniture;
  }
 
@@ -85,6 +138,56 @@
  vector<Item> RPGFileIO::GetItemsFromFile(string fileName)
  {
 	 vector<Item> items;
+
+
+	 ifstream file;
+	 file.open(fileName, ios::in);
+
+	 while (!file.eof())
+	 {
+		 //Local Variables
+		 Item temp;
+		 string name;
+		 string key;
+		 string description = "Test Description";
+		 string isWeapon;
+		 string damage;
+		 string uses;
+		 string dummyString;
+
+		 //Get The information of the object from the file. read the next 6 lines in.
+		 getline(file, key);
+		 getline(file, name);
+		 //getline(file, description);
+		 getline(file, damage);
+		 getline(file, isWeapon);
+		 getline(file, uses);
+		 getline(file, dummyString);
+
+		 cout << name << endl;
+
+		 //start adding the information from the file to our object
+		 temp.setName(name);
+		 temp.setDescription(description);
+		 temp.setKey(std::atoi(key.c_str()));
+		 temp.setIsWeapon(std::atoi(isWeapon.c_str()));
+		 temp.setDamage(std::atoi(damage.c_str()));
+		 temp.setUses(std::atoi(uses.c_str()));
+
+		 //push the temp area to areas
+		 items.push_back(temp);
+	 }
+
+	 //DEBUG code for seeing the file as it is parsed by this function
+	 for (Item &x : items)
+	 {
+		 cout << "key: " << x.getKey() << endl;
+		 cout << "Name: " << x.getName() << endl;
+		 cout << "Description: " << x.getDescription() << endl;
+		 cout << "is weapon: " << x.getIsWeapon() << endl;
+		 cout << "damage: " << x.getDamage() << endl;
+		 cout << endl << endl;
+	 }
 
 	 return items;
  }
