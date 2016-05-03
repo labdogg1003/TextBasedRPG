@@ -18,7 +18,6 @@ private:
 public:
 	void setHealth(int h)
 	{
-		h = 100;
 		Health = h;
 	}
 	int getHealth()
@@ -36,7 +35,7 @@ public:
 	}
 	void setName(string n)
 	{
-		n = Name;
+		Name = n;
 	}
 	string getName()
 	{

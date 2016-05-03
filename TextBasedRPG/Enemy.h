@@ -4,26 +4,24 @@
 #include "Character.h"
 #include "Item.h"
 
-#ifndef Player_h
-#define Player_h
+#ifndef Enemy_h
+#define Enemy_h
 
 using namespace std;
 
-class Player : public Character
+class Enemy : public Character
 {
 private:
-	Item weapon;
+	int damage;
 public:
-	void setWepon(Item weapon)
+	void setDamage(int d)
 	{
-		Item w;
-		w.getName;
-		weapon = w;
+		damage = d;
 	}
 
-	Item getWeapon()
+	int getDamage()
 	{
-		return weapon;
+		return damage;
 	}
 };
-#endif //Player_h
+#endif //Enemy_h

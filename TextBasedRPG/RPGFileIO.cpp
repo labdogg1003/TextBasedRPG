@@ -59,6 +59,7 @@
 	}
 	
 	//DEBUG code for seeing the file as it is parsed by this function
+	/*
 	for (Area &x : areas)	
 	{
 		cout << "key: " << x.getKey() << endl;
@@ -71,7 +72,7 @@
 		}
 		cout << endl << endl;
 	}
-
+	*/
 	return areas;
 }
 
@@ -103,11 +104,6 @@
 		 getline(file, itemKey);
 		 getline(file, dummyString);
 
-		 cout << "name: " << name << endl;
-		 cout << key << endl;
-		 cout << description << endl;
-		 cout << itemKey << endl;
-
 		 //start adding the information from the file to our object
 		 temp.setName(name);
 		 temp.setDescription(description);
@@ -120,7 +116,7 @@
 	 }
 
 	 //DEBUG code for seeing the file as it is parsed by this function
-	 for (Furniture &x : furniture)
+	 /*for (Furniture &x : furniture)
 	 {
 		 cout << "key: " << x.getKey() << endl;
 		 cout << "Name: " << x.getName() << endl;
@@ -129,7 +125,7 @@
 		 cout << "Item Keys: " << x.getItem() << endl;
 		 cout << endl << endl;
 	 }
-
+	 */
 	 return furniture;
  }
 
@@ -164,8 +160,6 @@
 		 getline(file, uses);
 		 getline(file, dummyString);
 
-		 cout << name << endl;
-
 		 //start adding the information from the file to our object
 		 temp.setName(name);
 		 temp.setDescription(description);
@@ -179,6 +173,7 @@
 	 }
 
 	 //DEBUG code for seeing the file as it is parsed by this function
+	 /*
 	 for (Item &x : items)
 	 {
 		 cout << "key: " << x.getKey() << endl;
@@ -188,7 +183,7 @@
 		 cout << "damage: " << x.getDamage() << endl;
 		 cout << endl << endl;
 	 }
-
+	 */
 	 return items;
  }
 

@@ -12,18 +12,27 @@ using namespace std;
 class Player : public Character
 {
 private:
+	bool inBattle;
 	Item weapon;
 public:
-	void setWepon(Item weapon)
+	void setWeapon(Item w)
 	{
-		Item w;
-		w.getName;
 		weapon = w;
 	}
 
 	Item getWeapon()
 	{
 		return weapon;
+	}
+
+	void setInBattle(bool battle)
+	{
+		inBattle = battle;
+	}
+
+	bool getInBattle()
+	{
+		return inBattle;
 	}
 };
 #endif //Player_h
