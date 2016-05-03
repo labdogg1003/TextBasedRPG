@@ -9,9 +9,9 @@ using namespace std;
 class Area
 {
 private:
-    int key;			  //Key used for searching later
-	string name;          //Area name
-    string description;   //Area description
+    int key;			       //Key used for searching later
+	string name;               //Area name
+    string description;        //Area description
 	vector<int> furnitureKeys; //The keys to the furniture in the area/scene
 public:
     // Constructor #1

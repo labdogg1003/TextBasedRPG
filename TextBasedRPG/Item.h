@@ -7,12 +7,12 @@ using namespace std;
 class Item
 {
 private:
-    int key;        //Key used for searching later
-    string name;    //name of the item
-	string description; //description of the item
-    int damage;     //damage the item does if used as a weapon
-    bool isWeapon;  //if the item is a weapon
-    int uses;       //how many uses the item has as a weapon
+    int key;             //Key used for searching later
+    string name;         //name of the item
+	string description;  //description of the item
+    int damage;          //damage the item does if used as a weapon
+    bool isWeapon;       //if the item is a weapon
+    int uses;            //how many uses the item has as a weapon
 
 public:
     //Constructor #1
