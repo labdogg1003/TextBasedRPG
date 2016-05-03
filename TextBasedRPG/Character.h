@@ -13,7 +13,7 @@ class Character
 {
 private:
 	int Health;
-	Area area;
+	int area;
 	string Name;
 public:
 	void setHealth(int h)
@@ -25,14 +25,12 @@ public:
 	{
 		return Health;
 	}
-	void setArea(Area area)
+	void setArea(int a)
 	{
-		Area a;
-		a.getName();
 		area = a;
 
 	}
-	Area setArea()
+	int getArea()
 	{
 		return area;
 	}

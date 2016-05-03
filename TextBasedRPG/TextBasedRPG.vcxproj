@@ -20,8 +20,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Area.h" />
+    <ClInclude Include="Character.h" />
+    <ClInclude Include="Enemy.h" />
     <ClInclude Include="Furniture.h" />
     <ClInclude Include="Item.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="RPGFileIO.h" />
   </ItemGroup>
   <ItemGroup>
